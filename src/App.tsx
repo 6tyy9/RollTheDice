@@ -1,5 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { ImageSourcePropType, StyleSheet, Text, View } from 'react-native'
+import React, { PropsWithChildren } from 'react'
+
+import DiceOne from '../assets/One.png'
+import DiceTwo from '../assets/Two.png'
+import DiceThree from '../assets/Three.png'
+import DiceFour from '../assets/Four.png'
+import DiceFive from '../assets/Five.png'
+import DiceSix from '../assets/Six.png'
+
+type DiceProps =  PropsWithChildren<{
+  imageUrl: ImageSourcePropType}>
+
 
 export default function App() {
   return (
